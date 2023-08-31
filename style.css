@@ -1,0 +1,9 @@
+  table{
+            border: .2rem solid burlywood;
+            background-color: aquamarine;
+            row-gap: .2rem solid grey;
+  }
+  caption{
+            background-color: aqua;
+            border: .2rem solid antiquewhite;
+  }

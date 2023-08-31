@@ -1,0 +1,43 @@
+# use your python file to create a table element of html file and open in web browser
+
+import webbrowser
+creation = open("tablets.html", "w")
+cretin ="""<html lang = 'en'>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv= 'X-UA compatible' content= 'IE=edge'>
+    <meta name='viewport' content='width=device-width'>
+    <link rel="styleSheet" href="style.css">
+    <title>Tables</title>
+</head>
+<body>
+    <div>
+    <table border="1" cellspacing="5" cellpadding="20">
+    <caption>"Tables"</caption> 
+        <thead>
+        <th>Time Period</th>
+        <th>Achievements</th>
+        <th>Future Progression</th>
+        </thead>
+        <tbody>
+        <tr>
+        <td>1st week</td>
+        <td>5 members</td>
+        <td>God's glory being made manifest.</td>
+        </tr>
+        <tr>
+        <td>2nd week</td>
+        <td>112 members</td>
+        <td>The beginning of something great.</td>
+        </tr>
+        </tbody>
+    </table>
+    </div>
+</body>
+</html>"""
+creation.write(cretin)
+creation.close()
+webbrowser.open("tablets.html")
+csssv = open("convert.csv", "w")
+csssv.write(cretin)
+csssv.close()
